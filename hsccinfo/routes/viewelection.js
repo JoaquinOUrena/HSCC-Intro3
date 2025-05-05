@@ -6,7 +6,8 @@ const APIRequests=require("../middleware/APIRequests");
 router.get('/', function(req, res, next) {
 
     const url = 'https://elections-cpl.api.hscc.bdpa.org/v1/elections'
-    const token = process.env.BEARER_TOKEN;
+    //const token = process.env.BEARER_TOKEN;
+    const token = "273f841b-4865-48b0-8045-14c768c7ae76"
    
     // Pass url and token into RestAPIGet and pull information from response
     APIRequests.getWithBearerToken(url, token)
